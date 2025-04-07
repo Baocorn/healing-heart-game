@@ -1,0 +1,67 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffebf2; /* Màu hồng nhẹ dành cho bạn gái */
+    text-align: center;
+    padding: 20px;
+}
+
+.game-container {
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+}
+
+.game-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.emoji {
+    font-size: 4rem;
+    cursor: pointer;
+    margin: 0 20px;
+    transition: transform 0.3s ease;
+}
+
+.emoji:hover {
+    transform: scale(1.2);
+}
+
+#instructions {
+    font-size: 1.2rem;
+    margin: 20px 0;
+    color: #d1006c;
+}
+
+.heart-container {
+    margin-top: 40px;
+    position: relative;
+}
+
+.heart {
+    font-size: 6rem;
+    transition: opacity 1s;
+}
+
+.healed-heart {
+    font-size: 6rem;
+    display: none;
+}
+
+#progressContainer {
+    margin-top: 20px;
+    font-size: 1.2rem;
+}
+
+progress {
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+}
+
+#healedMessage {
+    font-size: 1.5rem;
+    color: #FF3366; /* Màu đỏ hồng cho thông điệp */
+    font-weight: bold;
+    margin-top: 20px;
+}

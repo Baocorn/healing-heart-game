@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Healing Heart</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <div class="game-title">
+            <span class="emoji" id="emoji1">💊</span>
+            <span class="emoji" id="emoji2">🩹</span>
+            <span class="emoji" id="emoji3">❤️‍🩹</span>
+        </div>
+        <div id="instructions">
+            <p>Ấn thuốc 3 lần, băng gạt 2 lần và trái tim 3 lần để trái tim hồi phục hoàn toàn!</p>
+        </div>
+        
+        <!-- Thanh tiến trình chữa lành dưới trái tim -->
+        <div class="heart-container">
+            <div id="brokenHeart" class="heart">💔</div>
+            <div id="healedHeart" class="healed-heart" style="display:none;">❤️</div>
+            <div id="progressContainer">
+                <progress id="healingProgress" value="0" max="100"></progress>
+                <span id="progressText">0%</span>
+            </div>
+            <!-- Thông điệp khi trái tim hồi phục -->
+            <div id="healedMessage" style="display:none;">
+                <p>Trái tim đã được hồi phục rồi, tha lỗi cho anh nhé vì mọi thứ :[</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
